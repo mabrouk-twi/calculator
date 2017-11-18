@@ -73,5 +73,11 @@ public class MainActivity extends AppCompatActivity {
 
         result.setText(resultBuilder.toString());
 
+        hideKeyboard();
+    }
+
+    private void hideKeyboard() {
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
     }
 }
