@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mabrouk.calculator.MainActivity">
+
+    <Spinner android:id="@+id/op_selector"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <View android:id="@+id/center"
+        android:layout_width="2dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/op_selector"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText android:id="@+id/input1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/center"
+        android:layout_toLeftOf="@id/center"
+        android:layout_marginRight="30dp"/>
+
+    <EditText android:id="@+id/input2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/center"
+        android:layout_toRightOf="@id/center"
+        android:layout_marginLeft="30dp"/>
+
+    <Button android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input1"
+        android:layout_marginTop="25dp"
+        android:text="Calculate"/>
+
+    <TextView android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/calculate"
+        android:gravity="center"
+        android:layout_marginTop="35dp"/>
+
+</RelativeLayout>
