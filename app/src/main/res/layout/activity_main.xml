@@ -17,6 +17,7 @@
         android:layout_below="@id/op_selector"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:inputType="number"
         />
 
     <EditText android:id="@+id/input1"
@@ -24,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/center"
         android:layout_toLeftOf="@id/center"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="30dp"
+        android:inputType="number"/>
 
     <EditText android:id="@+id/input2"
         android:layout_width="80dp"
