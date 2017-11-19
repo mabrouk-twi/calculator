@@ -24,5 +24,9 @@ double multiply(double op1, double op2)
 
 double divide(double op1, double op2)
 {
-	return op1 / op2;
+	//sultan
+	if(op2 !=0)
+		return op1 / op2;
+	else
+		return -1;
 }
