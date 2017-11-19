@@ -8,3 +8,8 @@ double add(double op1, double op2)
 {
 	return op1 + op2;
 }
+
+double subtract(double op1, double op2)
+{
+	return (op1 - op2);
+}
