@@ -17,7 +17,6 @@
         android:layout_below="@id/op_selector"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:inputType="number"
         />
 
     <EditText android:id="@+id/input1"
@@ -33,7 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/center"
         android:layout_toRightOf="@id/center"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:inputType="number"
+/>
 
     <Button android:id="@+id/calculate"
         android:layout_width="match_parent"
